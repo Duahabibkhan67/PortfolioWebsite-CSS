@@ -1,0 +1,103 @@
+/* service.css */
+
+/* Main Container */
+#services-main {
+
+ max-width: 1200px;
+ margin: 0 auto;
+ padding-top: 2rem;
+ padding-bottom: 3rem;
+}
+
+/* Services Title */
+#services-title {
+ display: flex;
+ justify-content: center;
+ font-size: 4rem; /* Large font size for desktop */
+}
+
+#services-title-first {
+ color: #e53e3e; /* Rose-700 color */
+
+ font-family: 'serif';
+}
+
+#services-title-second {
+ margin-top: 4rem;
+ color: white;
+ font-family: 'serif';
+}
+
+/* Grid Layout for Services */
+#services-grid {
+ display: grid;
+ grid-template-columns: 1fr 1fr 1fr;
+ gap: 2rem;
+
+  margin-bottom: 2rem;
+ justify-items: center;
+}
+
+
+
+@media (max-width:480px) {
+ #services-grid {
+   grid-template-columns: 1fr;
+   font-size: 1rem;
+ }
+}
+
+/* Individual Service Card */
+#service-card {
+
+ padding: 2rem;
+
+ transition: transform 0.3s ease;
+ text-align: center;
+
+
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+}
+
+#service-card:hover {
+ transform: scale(1.05);
+}
+
+
+#service-logo-web {
+ margin: 1rem;
+ border-radius: 50%;
+ background-color: #3182ce; /* Blue-600 */
+}
+
+#service-logo-design {
+ background-color: #dd6b20; /* Orange-600 */
+}
+
+#service-logo-responsive {
+ background-color: #48bb78;/* Green-700 */
+}
+
+#service-logo:hover {
+ transform: scale(1.1);
+}
+
+/* Service Title */
+#service-title {
+ color: white;
+ font-size: 2rem;
+ margin: 1rem 0;
+
+}
+
+/* Service Description */
+#service-description {
+ color: white;
+ font-size: 1rem;
+ margin-top: 1rem;
+ margin-bottom: 1rem;
+ line-height: 1.5;
+ padding: 0 1rem;
+}

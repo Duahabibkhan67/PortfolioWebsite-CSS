@@ -1,0 +1,91 @@
+/* aboutme.css */
+
+/* Container for the section */
+#aboutme-container {
+ display: flex;
+ flex-direction: column;
+ background-color: black;
+ padding: 2rem;
+ gap: 2rem;
+}
+@media (max-width:480px) {
+  #aboutme-container {
+    margin-top: 0;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
+/* Image Container */
+#aboutme-image-container {
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ margin-bottom: 2rem;
+}
+@media (max-width:480px) {
+  #aboutme-image-container {
+   display: flex;
+  }
+#aboutme-image {
+ border-radius: 50%;
+ width: auto;
+
+
+}
+
+@media (max-width:480px) {
+  #aboutme-image {
+   height: 10rem;
+   width: 10rem;
+  }
+}
+/* Text Container */
+#aboutme-text-container {
+ margin: 0 1rem;
+ color: white;
+}
+
+/* Title Styles */
+#aboutme-title {
+ color: #e53e3e; /* Rose-700 color */
+ font-family: serif;
+ font-size: 3rem;
+ margin-bottom: 2rem;
+ display: flex;
+ justify-content: center;
+}
+@media (max-width:480px) {
+  #aboutme-tittle {
+    font-size: 2rem;
+  }
+}
+#aboutme-title-secondary {
+ color: white;
+}
+
+/* Paragraph Styles */
+#aboutme-description {
+ font-size: 1.25rem; /* 2xl equivalent */
+ margin-top: 1.5rem;
+ line-height: 1.75;
+}
+@media (max-width:480px) {
+  #aboutme-description {
+  font-size: 15px;
+  }
+}
+/* Responsive Styles */
+
+
+ #aboutme-image-container {
+   margin-right: 2rem;
+ }
+
+ #aboutme-title {
+   font-size: 4rem; /* Adjust for larger screens */
+ }
+
+ #aboutme-description {
+   font-size: 1.5rem; /* Larger text for larger screens */
+ }
+}

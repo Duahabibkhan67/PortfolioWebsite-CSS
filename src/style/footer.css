@@ -1,0 +1,71 @@
+/* Footer.module.css */
+
+/* Main footer container */
+#footerMain {
+ background-color: black;
+ height: 80px; /* Adjusted height */
+ padding-top: 20px;
+ padding-bottom: 20px;
+}
+
+/* Section containing three columns */
+#footerSection {
+ display: grid;
+ grid-template-columns: 1fr 1fr 1fr;
+ background-color: #2f2f2f; /* Equivalent to bg-zinc-900 */
+ padding: 16px;
+}
+@media(max-width:480px){
+ #footerSection{
+ grid-template-columns: 1fr;
+ padding: 0;
+
+}
+}
+/* Each footer item (column) */
+#footerItem {
+ margin: 24px;
+}
+
+/* Footer Title */
+#footerTitle {
+ font-size: 2rem; /* Equivalent to text-3xl */
+ color: #1e40af; /* Equivalent to text-blue-800 */
+ font-weight: bold;
+ margin-bottom: 12px;
+}
+
+/* Footer Description */
+#footerDescription {
+ font-size: 1.125rem; /* Equivalent to text-1xl */
+ color: white;
+ margin-bottom: 16px;
+}
+
+/* Footer Subtitle (e.g., "Get in Touch") */
+#footerSubTitle {
+ font-size: 2rem; /* Equivalent to text-3xl */
+ color: #1e40af; /* Equivalent to text-blue-800 */
+ font-weight: bold;
+ margin-bottom: 16px;
+}
+
+/* Footer Contact Information */
+#footerContact {
+ font-size: 1.125rem; /* Equivalent to text-1xl */
+ color: white;
+ margin-bottom: 8px;
+}
+
+/* Footer Service List */
+#footerList {
+ list-style-type: none;
+ padding-left: 0;
+}
+
+/* Footer Service List Item */
+#footerListItem {
+ font-size: 1.125rem; /* Equivalent to text-1xl */
+ color: white;
+ margin-bottom: 8px;
+}

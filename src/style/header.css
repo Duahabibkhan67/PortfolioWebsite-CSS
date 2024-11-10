@@ -1,0 +1,77 @@
+#header {
+ display: flex;
+ justify-content: space-between;
+ background-color: black;
+padding: 16px;
+ top: 0;
+ left: 0;
+ right: 0;
+}
+@media (max-width:480px) {
+ #header{
+  display: flex;
+  margin-top: 0;
+ }
+}
+#logo h1 {
+ font-size: 36px;
+ margin-left: 16px;
+ color: #e11d48; /* Tailwind's text-rose-700 */
+ font-family: system-ui,sans-serif;
+}
+
+#nav .nav-links {
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+}
+@media (max-width:480px) {
+ #nav .nav-links{
+  display: flex;
+
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 0;
+ }
+}
+#nav-button {
+ margin: 12px;
+ font-size: 20px;
+ color: white;
+ background: none;
+ border: none;
+ cursor: pointer;
+ transition: transform 0.3s ease, background-color 0.3s ease;
+}
+@media (max-width:480px) {
+ #nav-button{
+font-size: 15px;
+  margin-top: 0;
+ }
+}
+#nav-button:hover {
+ transform: scale(1.1);
+}
+
+#contact-button {
+ font-size: 20px;
+ margin: 12px;
+ padding: 10px 20px;
+ background-color: #c62828; /* Tailwind's bg-rose-800 */
+ color: white;
+ border-radius: 12px;
+ border: none;
+ cursor: pointer;
+ transition: transform 0.3s ease, background-color 0.3s ease;
+}
+@media (max-width:480px) {
+ #contact-button{
+  margin-right: 2rem;
+font-size: 15px;
+  margin-top: 0;
+ }
+}
+#contact-button:hover {
+ transform: scale(1.1);
+ background-color: #374151; /* Tailwind's hover:bg-slate-900 */
+}

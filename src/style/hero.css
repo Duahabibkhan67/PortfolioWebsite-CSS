@@ -1,0 +1,88 @@
+#heroSection {
+ display: flex;
+ justify-content: space-between;
+ background-color: black;
+ padding: 16px;
+ left: 0;
+ right: 0;
+}
+@media(max-width:480px){
+ #heroSection {
+  display: flex;
+flex-direction: column;
+ }
+}
+/* Image Container */
+#imageContainer {
+ display: flex;
+ justify-content: center;
+ margin-right: 16px;
+}
+
+#profileImage {
+ border: 2px solid #acacac; /* Accent border */
+ border-radius: 50%; /* Circular image */
+ transition: transform 0.3s ease;
+}
+@media(max-width:480px){
+ #profileImage {
+height: 10rem;
+width: 10rem;
+ }
+}
+#profileImage:hover {
+ transform: scale(1.05);
+}
+
+/* Text Container */
+#textContainer {
+ margin: 20px;
+ max-width: 50%;
+}
+
+#heading {
+ font-size: 4rem; /* Equivalent to sm:text-7xl */
+ color: #e11d48; /* Rose color */
+ font-family: serif;
+ 
+ margin-bottom: 20px;
+}
+@media(max-width:480px){
+ #heading {
+font-size: 2rem;
+ }
+}
+#paragraph {
+ font-size: 1.5rem; /* Equivalent to sm:text-3xl */
+ color: white;
+ margin-bottom: 20px;
+}
+@media(max-width:480px){
+ #paragraph{
+font-size: 12px;
+ }
+}
+
+/* Social Links */
+#socialLinks {
+ display: flex;
+ gap: 15px;
+}
+
+#linkedInImage, #githubImage, #fiverrImage {
+ cursor: pointer;
+ border-radius: 50%;
+ /* transition: transform 0.3s ease; */
+}
+
+#linkedInImage:hover,
+#githubImage:hover,
+#fiverrImage:hover {
+ transform: scale(1.1);
+}
+#githubImage{
+ background-color: white;
+}
+#linkedInImage{
+ background-color: rgba(0, 0, 255, 0.59);
+}

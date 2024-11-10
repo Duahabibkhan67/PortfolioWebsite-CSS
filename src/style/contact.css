@@ -1,0 +1,118 @@
+/* aboutme.css */
+
+/* Main Container */
+#aboutme-container {
+ background-color: black;
+ padding: 2rem;
+ color: white;
+ font-family: 'serif', sans-serif;
+}
+
+/* Title */
+#aboutme-title {
+ text-align: center;
+ font-size: 3rem; /* Adjust for larger screens */
+ color: white;
+ margin-bottom: 2rem;
+}
+
+#aboutme-title u {
+ text-decoration: underline;
+}
+
+#aboutme-title b {
+ color: #e53e3e; /* Rose-700 color */
+}
+
+/* Main Content Layout */
+#aboutme-main-content {
+ display: flex;
+ justify-content: space-between;
+ flex-wrap: wrap;
+ gap: 2rem;
+ margin-top: 2rem;
+}
+
+/* Contact Form */
+#contact-form {
+ background-color: #1e293b; /* Slate-900 */
+ width: 100%;
+ max-width: 24rem; /* Fixed width for the form */
+ padding: 1.5rem;
+ border-radius: 1rem;
+ border: 1px solid #e53e3e; /* Accent border color */
+}
+
+#form-group {
+ margin-bottom: 1.5rem;
+}
+
+#form-label {
+ display: block;
+ font-size: 1rem;
+ margin-bottom: 0.5rem;
+}
+
+#form-input {
+ background-color: #0f172a; /* Slate-950 */
+ color: white;
+ border: 1px solid #4b5563; /* Gray-600 for a border color */
+ padding: 0.75rem;
+ width: 80%;
+ border-radius: 0.5rem;
+}
+
+#form-input::placeholder {
+ color: #9ca3af; /* Placeholder color */
+}
+
+#form-textarea {
+ background-color: #0f172a; /* Slate-950 */
+ color: white;
+ border: 1px solid #4b5563; /* Gray-600 */
+ padding: 0.75rem;
+ width: 80%;
+ border-radius: 0.5rem;
+}
+
+#form-button {
+ background-color: #e53e3e; /* Rose-700 */
+ color: white;
+ border: 1px solid #e53e3e;
+ font-size: 1.25rem;
+ padding: 0.75rem 1rem;
+ width: auto;
+ border-radius: 0.5rem;
+ cursor: pointer;
+ transition: background-color 0.3s, transform 0.3s;
+ margin-top: 1rem;
+}
+
+#form-button:hover {
+ background-color: #3b82f6; /* Blue-500 on hover */
+ transform: scale(1.05);
+}
+
+/* Contact Image */
+#contact-image {
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ margin-top: 2rem;
+margin-right: 5rem;
+}
+
+#contact-image-style {
+
+
+
+ border-radius: 0.5rem;
+}
+@media(max-width:480px){
+ #contact-image-style{
+    height: 10rem;
+    width: 15rem;
+ }
+}
+
+

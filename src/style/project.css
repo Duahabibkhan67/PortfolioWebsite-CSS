@@ -1,0 +1,113 @@
+/* project.css */
+
+/* Overall Container */
+#project-container {
+ background-color: black;
+ margin: 0 auto;
+ padding-top: 2rem;
+}
+
+/* Header */
+#project-header {
+ text-align: center;
+ margin-bottom: 2rem;
+}
+
+#project-title {
+ color: white;
+ font-size: 3rem; /* For mobile */
+ margin-bottom: 1rem;
+}
+
+#project-subtitle {
+ color: #9b2c2c; /* Rose 700 */
+ font-size: 2.25rem; /* For mobile */
+}
+
+/* Grid Layout for Projects */
+#project-grid {
+ display: grid;
+ grid-template-columns: 1fr 1fr 1fr;
+ gap: 2rem;
+ margin-top: 2rem;
+}
+
+@media(max-width:480px){
+#project-grid{
+ grid-template-columns: 1fr;
+}
+}
+
+/* Individual Project Card */
+#project-card {
+ margin-left: 2rem;
+ background-color: #2d3748; /* Gray 800 */
+ border-radius: 1rem;
+ height: 28rem;
+ width: 20rem;
+ overflow: hidden;
+ cursor: pointer;
+ transition: transform 0.3s ease;
+}
+
+@media(max-width:480px){
+ #project-card{
+ margin-left:10px;
+
+ }
+ }
+ 
+
+
+#project-card:hover {
+ transform: scale(1.05);
+}
+
+/* Project Image */
+#project-image {
+ 
+ height: auto;
+ margin-top: 1rem;
+ margin-bottom: 1rem;
+}
+
+/* Project Title */
+#project-card-title {
+ font-size: 1rem;
+ color: #e53e3e; /* Rose 700 */
+ text-align: center;
+ margin-top: 1rem;
+}
+
+/* Project Description */
+#project-card-description {
+ font-size: 10px;
+ color: white;
+ text-align: center;
+ margin: 0 1rem;
+ margin-bottom: 1.5rem;
+}
+
+/* View Button */
+#project-view-button {
+ display: block;
+ margin: 0 auto;
+ background-color: black;
+ color: white;
+ font-size: 20px;
+ outline: none;
+ padding: 0.5rem 1rem;
+ border-radius: 1.5rem;
+ text-align: center;
+ width: fit-content;
+ transition: transform 0.3s ease;
+}
+
+#project-view-button:hover {
+ transform: scale(1.05);
+}
+
+#project-view-button b {
+ font-weight: bold;
+}
+
